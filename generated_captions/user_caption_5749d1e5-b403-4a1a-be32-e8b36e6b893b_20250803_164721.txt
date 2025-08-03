@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_5749d1e5-b403-4a1a-be32-e8b36e6b893b_20250803_164721.png
+User Seed: Painting of a man in a rice field
+Art Category: painting
+Generated Image ID: user_seed_861fc1f1
+Source Image Name: 2131
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this evocative painting, a contemplative man in a white robe stands amidst golden wheat fields, framed by a serene river and distant townscape. The soft brushstrokes and warm palette evoke a sense of tranquility and timelessness, capturing the harmonious blend of rural and urban life.
+Timestamp: 2025-08-03T16:46:56.989467
+Workflow ID: 5749d1e5-b403-4a1a-be32-e8b36e6b893b

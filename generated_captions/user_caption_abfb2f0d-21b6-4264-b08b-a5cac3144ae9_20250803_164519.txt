@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_abfb2f0d-21b6-4264-b08b-a5cac3144ae9_20250803_164519.png
+User Seed: A painting of a lady in a mirror
+Art Category: painting
+Generated Image ID: user_seed_ab1e62ad
+Source Image Name: 2011
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this evocative painting, a poised woman in a blue dress and elegant hat gazes into a mirror, framed by a sunlit kitchen and lush garden. The masterful brushwork captures a serene, introspective mood, blending classical portraiture with vibrant, natural surroundings.
+Timestamp: 2025-08-03T16:44:52.851697
+Workflow ID: abfb2f0d-21b6-4264-b08b-a5cac3144ae9

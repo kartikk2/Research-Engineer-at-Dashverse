@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_3abc2abe-4785-4c03-9b58-c41f553aac6e_20250803_164404.png
+User Seed: An engraving of cruxification
+Art Category: engraving
+Generated Image ID: user_seed_bd5c438d
+Source Image Name: 12
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this intricate engraving, a dramatic crucifixion scene unfolds against the backdrop of a majestic castle with a clock tower. The foreground is populated by detailed figures, including sailors and satyrs, capturing a moment of intense emotion. The composition is enriched by a neoclassical building and a harbor bustling with ships, all rendered in meticulous black and white linework. The atmospheric tension is palpable, evoking
+Timestamp: 2025-08-03T16:43:33.356360
+Workflow ID: 3abc2abe-4785-4c03-9b58-c41f553aac6e

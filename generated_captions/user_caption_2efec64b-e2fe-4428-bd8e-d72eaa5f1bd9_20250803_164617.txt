@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_2efec64b-e2fe-4428-bd8e-d72eaa5f1bd9_20250803_164617.png
+User Seed: A duck floating in a pond
+Art Category: drawing
+Generated Image ID: user_seed_666f05d7
+Source Image Name: i - 922
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this captivating sculpture, a serene duck gracefully floats amidst a tranquil pond, surrounded by lush forest and distant sand dunes. The monochromatic palette and intricate detailing evoke a timeless elegance, harmoniously blending natural and mythical elements to create a contemplative and ethereal atmosphere.
+Timestamp: 2025-08-03T16:45:51.892868
+Workflow ID: 2efec64b-e2fe-4428-bd8e-d72eaa5f1bd9

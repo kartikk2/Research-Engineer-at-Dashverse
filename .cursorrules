@@ -1,0 +1,63 @@
+# Cursor Rules for MultiModel AI Project
+
+## Project Overview
+This is a Python 3.13 project for building multimodal AI applications using LangChain, LangGraph, and various AI models.
+
+## Code Style & Standards
+- Use Python 3.13+ features and type hints
+- Follow PEP 8 style guidelines
+- Keep code clean and modular
+- Use minimal, crisp comments (avoid obvious comments)
+- Prefer function-based approach over classes when possible
+- Use pathlib for file operations
+- Use f-strings for string formatting
+- Use verbose method naming for clarity
+- Keep method descriptions short and concise
+- Keep the project structure modular. There should be proper separation of concerns.
+
+## Project Structure
+- `src/main/` - Main package code (treat as primary package)
+- `data/` - Downloaded datasets and data files
+- `requirements.txt` - Python dependencies
+- `pyproject.toml` - Project configuration
+
+## Virtual Environment
+- Always use `multimodal_ai_venv` for all Python commands
+
+## Dependencies
+- langchain, langchain-core, langchain-community, langchain-openai
+- langgraph for stateful applications
+- pydantic for data validation
+- kaggle for dataset downloads
+- python-dotenv for environment management
+
+## Environment Variables
+- Use environment variables wherever necessary for configuration
+- Store sensitive data in `.env` file
+- Use `python-dotenv` to load environment variables
+- Never hardcode API keys or credentials
+
+## Code Patterns
+- Keep code clean and modular
+- Use async/await for I/O operations when appropriate
+- Implement proper error handling with try/except
+- Use dataclasses or Pydantic models for data structures
+- Prefer composition over inheritance
+
+## Documentation
+- Use short, concise docstrings for all public functions and classes
+- Keep README.md updated with usage examples
+- Document API endpoints and data formats
+
+## Security
+- Never commit API keys or sensitive data
+- Use environment variables for configuration
+- Validate all user inputs
+- Use proper file permissions (600 for credential files)
+
+## AI/ML Specific
+- Use LangChain for LLM orchestration
+- Implement proper prompt engineering
+- Use LangGraph for complex workflows
+- Handle multimodal data (text, images, audio) appropriately
+- Implement proper model versioning and caching 

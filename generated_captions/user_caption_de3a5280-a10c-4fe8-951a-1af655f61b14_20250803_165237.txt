@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_de3a5280-a10c-4fe8-951a-1af655f61b14_20250803_165237.png
+User Seed: A drawing of a couple kissing in a park
+Art Category: drawing
+Generated Image ID: user_seed_da031fb4
+Source Image Name: i - 681
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this evocative drawing, a couple shares a tender kiss amidst a serene park setting. Delicate lines capture the intimacy, framed by a lush garden and tranquil pond adorned with lily pads. The monochromatic palette enhances the romantic, timeless atmosphere, while the intricate details of the surrounding trees and distant gate evoke a sense of quiet elegance and natural harmony.
+Timestamp: 2025-08-03T16:52:11.712389
+Workflow ID: de3a5280-a10c-4fe8-951a-1af655f61b14

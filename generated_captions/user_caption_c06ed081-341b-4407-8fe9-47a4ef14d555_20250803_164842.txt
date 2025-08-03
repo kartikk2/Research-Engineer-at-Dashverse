@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_c06ed081-341b-4407-8fe9-47a4ef14d555_20250803_164842.png
+User Seed: An engraving of a war
+Art Category: engraving
+Generated Image ID: user_seed_b83c8986
+Source Image Name: 372
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this intricate engraving, a tumultuous battle unfolds across diverse landscapes, juxtaposing a war-torn city, a haunting dungeon, and a tumultuous sea voyage. The stark black and white palette accentuates the dramatic tension, while ethereal elements, such as bats and mythical figures, imbue the scene with a surreal, fairy-tale quality. The meticulous line work and shading capture the chaos
+Timestamp: 2025-08-03T16:48:10.628219
+Workflow ID: c06ed081-341b-4407-8fe9-47a4ef14d555

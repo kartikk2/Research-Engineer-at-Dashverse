@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_b7a573fd-124b-4956-8331-4f6283648435_20250803_165108.png
+User Seed: A couple sitting on a bench
+Art Category: sculpture
+Generated Image ID: user_seed_66ba6331
+Source Image Name: i - 224
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In a serene garden setting, a sculpted couple sits gracefully on a bench, surrounded by intricate sandcastle formations. The detailed craftsmanship evokes a tranquil, contemplative atmosphere.
+Timestamp: 2025-08-03T16:50:45.168587
+Workflow ID: b7a573fd-124b-4956-8331-4f6283648435

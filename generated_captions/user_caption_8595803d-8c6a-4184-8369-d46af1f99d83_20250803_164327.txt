@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_8595803d-8c6a-4184-8369-d46af1f99d83_20250803_164327.png
+User Seed: A painting of a majestic dragon flying over a castle with golden clouds
+Art Category: painting
+Generated Image ID: user_seed_95ffe446
+Source Image Name: 2033
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In a dreamlike tableau, a majestic dragon soars over a medieval castle, enveloped in golden-hued clouds. The painterly technique evokes a mystical atmosphere, blending landscapes and cityscapes with ethereal elegance.
+Timestamp: 2025-08-03T16:43:02.160191
+Workflow ID: 8595803d-8c6a-4184-8369-d46af1f99d83

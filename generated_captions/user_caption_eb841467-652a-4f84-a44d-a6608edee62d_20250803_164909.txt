@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_eb841467-652a-4f84-a44d-a6608edee62d_20250803_164909.png
+User Seed: An sculpture of jesus
+Art Category: sculpture
+Generated Image ID: user_seed_04719b63
+Source Image Name: i - 629
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In a monochromatic cityscape, a wooden sculpture merges Jesus' serene visage with a woman's outstretched arms, evoking spiritual grace amidst urban solemnity, embodying timeless reverence.
+Timestamp: 2025-08-03T16:48:45.180820
+Workflow ID: eb841467-652a-4f84-a44d-a6608edee62d

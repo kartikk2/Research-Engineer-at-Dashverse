@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_02792009-398c-4729-9180-46df77f6d770_20250803_164449.png
+User Seed: A drawing of a majestic dragon flying over a castle
+Art Category: drawing
+Generated Image ID: user_seed_895c2f86
+Source Image Name: i - 542
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this evocative drawing, a majestic dragon soars above a medieval castle, casting shadows over a bustling town. The intricate linework and muted tones create a mystical atmosphere, blending myth with architectural grandeur. The composition juxtaposes the ethereal dragon against the solid, ancient stone, evoking a sense of timeless wonder and intrigue.
+Timestamp: 2025-08-03T16:44:23.334426
+Workflow ID: 02792009-398c-4729-9180-46df77f6d770

@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_5ca1f022-e45f-4799-8d27-1040bf924ccc_20250803_164203.png
+User Seed: Graceful figure captured in motion, elegantly crafted sculpture.
+Art Category: sculpture
+Generated Image ID: user_seed_138e5555
+Source Image Name: i - 156
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: This exquisite bronze sculpture captures a dancer mid-leap, embodying grace and fluidity. Set against an urban backdrop, its dynamic form evokes a sense of timeless elegance and motion.
+Timestamp: 2025-08-03T16:41:38.384802
+Workflow ID: 5ca1f022-e45f-4799-8d27-1040bf924ccc

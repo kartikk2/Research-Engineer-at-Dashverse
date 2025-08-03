@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_02fb8731-5bea-4f51-9baa-8cf8831ebb6c_20250803_165013.png
+User Seed: A painting of an astronaut in space
+Art Category: drawing
+Generated Image ID: user_seed_9c2cdce7
+Source Image Name: i - 717
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In a dreamlike tableau, an astronaut tumbles from a spacecraft amidst celestial wonders, juxtaposed with serene garden scenes and whimsical monochrome elements, evoking a surreal, imaginative narrative.
+Timestamp: 2025-08-03T16:49:49.829459
+Workflow ID: 02fb8731-5bea-4f51-9baa-8cf8831ebb6c
