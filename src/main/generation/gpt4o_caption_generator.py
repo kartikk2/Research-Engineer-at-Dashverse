@@ -63,34 +63,55 @@ class GPT4OCaptionGenerator:
             # Create context-aware prompt for caption generation
             if similar_descriptions:
                 similar_context = ', '.join(similar_descriptions)
-                caption_prompt = f"""You are an expert in generating captions for professional art images. Generation a caption for a generated {art_category} artwork.
+                caption_prompt = f"""You are an expert in generating captions for professional art images. You will imagine and internally create three different captions for a generated {art_category} artwork, each with a different level of descriptive sophistication:
 
-Image Generation Prompt: {prompt}
-Image style: {art_category}
+1. **Simple** – Clear, concise, easy to understand by a general audience.  
+2. **Moderate** – More descriptive, with some artistic terms and stylistic flourishes.  
+3. **Advanced** – Rich in detail and professional art vocabulary, as in high-end art critique.
+
+Even though you will think of all three captions, you will **only output the Simple caption**.
+
+Image Generation Prompt: {prompt}  
+Image style: {art_category}  
 Inspiration Sources: {similar_context}
 
-Write a caption of around 25 words that describes:
-- The visual elements and composition
-- The objects in the image
-- The background of the image
-- The image style and technique specific to {art_category}
-- The mood and atmosphere
+For the Simple caption (the one you output), follow these rules:
+- Around 25 words.
+- Describe the visual elements and composition.
+- Mention the objects in the image.
+- Mention the background.
+- Mention the image style and technique specific to {art_category}.
+- Mention the mood and atmosphere.
+- Do NOT mention any image names from the inspiration sources.
+- Avoid using same words as present in the image generation prompt.
+- Make it sound like a professional art gallery description.
 
-Important note: In your generated caption, do NOT mention any image names that are in the inspiration sources.
-
-Make it sound like a professional art gallery description:"""
+Your final output must contain only the Simple caption and nothing else.
+"""
             else:
-                caption_prompt = f"""You are an expert art curator. Create a detailed, professional caption for a generated {art_category} artwork.
+                caption_prompt = f"""You are an expert in generating captions for professional art images. You will imagine and internally create three different captions for a generated {art_category} artwork, each with a different level of descriptive sophistication:
 
-Generation Prompt: {prompt}
-Art Category: {art_category}
+1. **Simple** – Clear, concise, easy to understand by a general audience.  
+2. **Moderate** – More descriptive, with some artistic terms and stylistic flourishes.  
+3. **Advanced** – Rich in detail and professional art vocabulary, as in high-end art critique.
 
-Write a comprehensive caption (2-3 sentences) that describes:
-- The visual elements and composition
-- The artistic style and technique specific to {art_category}
-- The mood and atmosphere
+Even though you will think of all three captions, you will **only output the Simple caption**.
 
-Make it sound like a professional art gallery description:"""
+Image Generation Prompt: {prompt}  
+Image style: {art_category}  
+
+For the Simple caption (the one you output), follow these rules:
+- Around 25 words.
+- Describe the visual elements and composition.
+- Mention the objects in the image.
+- Mention the background.
+- Mention the image style and technique specific to {art_category}.
+- Mention the mood and atmosphere.
+- Do NOT mention any image names from the inspiration sources.
+- Make it sound like a professional art gallery description.
+
+Your final output must contain only the Simple caption and nothing else.
+"""
             
             # Print the prompt being sent to GPT-4o
             print(f"📝 GPT-4o Caption Prompt:")

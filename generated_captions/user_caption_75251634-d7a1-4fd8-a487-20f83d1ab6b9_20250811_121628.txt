@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_75251634-d7a1-4fd8-a487-20f83d1ab6b9_20250811_121628.png
+User Seed: A painting of a dragon flying over a castle at sunset
+Art Category: painting
+Generated Image ID: user_seed_9965b761
+Source Image Name: 1601
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: A majestic dragon soars above a castle at dusk, set against a vibrant cityscape. The painting captures a serene yet awe-inspiring atmosphere with its rich, warm hues.
+Timestamp: 2025-08-11T12:16:02.582620
+Workflow ID: 75251634-d7a1-4fd8-a487-20f83d1ab6b9

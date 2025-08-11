@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_a201b4a6-1638-4f44-b3f8-1a9f1ba0b3bf_20250811_113803.png
+User Seed: A painting of a dragon flying over a medieval castle at sunset with golden clouds
+Art Category: painting
+Generated Image ID: user_seed_6b56af21
+Source Image Name: 1559
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: A majestic dragon soars above a medieval castle at sunset, surrounded by golden clouds. The painting captures a serene yet mystical atmosphere with rich colors and detailed brushwork.
+Timestamp: 2025-08-11T11:37:26.985259
+Workflow ID: a201b4a6-1638-4f44-b3f8-1a9f1ba0b3bf

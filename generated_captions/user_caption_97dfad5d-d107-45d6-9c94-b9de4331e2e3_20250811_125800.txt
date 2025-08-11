@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_97dfad5d-d107-45d6-9c94-b9de4331e2e3_20250811_125800.png
+User Seed: Graceful figure captured in motion, elegantly crafted sculpture
+Art Category: sculpture
+Generated Image ID: user_seed_eba5c42a
+Source Image Name: i - 156
+Similar Images: 3 found
+Similar Images with Objects: 3 found
+Similar Images with People/Characters: 3 found
+Similar Images with Settings: 3 found
+Similar Images with Compositions: 3 found
+Generated Caption: A graceful figure in motion, elegantly carved with smooth lines, stands against a minimalist backdrop. The sculpture exudes a serene and dynamic atmosphere.
+Timestamp: 2025-08-11T12:57:32.074021
+Workflow ID: 97dfad5d-d107-45d6-9c94-b9de4331e2e3

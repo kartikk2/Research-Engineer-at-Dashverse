@@ -69,15 +69,16 @@ class GPT4OPromptGenerator:
         similar_context = " | ".join(context_parts) if context_parts else "No similar context available"
         
         # Create the system prompt
-        system_prompt = """You are an expert at creating optimized prompts for Stable Diffusion XL (SDXL) image generation. 
+        system_prompt = """You are an expert at creating optimized prompts for Stable Diffusion XL(SDXL) image generation. 
 
 Your task is to transform a user's seed description into a crisp, SDXL-optimized prompt that will generate high-quality images.
 
 IMPORTANT GUIDELINES:
 1. EMPHASIZE on objects, characters and composition from the user's seed
-2. Reference the art category and similar image context for style consistency
-3. Use commas to separate different aspects
-4. Respond under 50 tokens.
+2. Put the ONE (only one) MAIN object/character between asterisks like *object*.
+3. Reference the art category and similar image context for style consistency
+4. Use commas to separate different aspects
+5. Respond under 50 tokens
 
 STRUCTURE:
 - Key objects and characters (emphasize these from user seed)
@@ -104,8 +105,8 @@ Focus on making the user's key elements stand out while maintaining artistic qua
             response = self.llm.invoke(messages)
             generated_prompt = response.content.strip()
             
-            # Clean up the prompt
-            generated_prompt = self._clean_prompt(generated_prompt)
+            # # Clean up the prompt
+            # generated_prompt = self._clean_prompt(generated_prompt)
             
             return generated_prompt
             

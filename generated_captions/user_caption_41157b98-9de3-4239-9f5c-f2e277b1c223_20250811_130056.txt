@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_41157b98-9de3-4239-9f5c-f2e277b1c223_20250811_130056.png
+User Seed: A drawing of a couple sitting on a bench
+Art Category: drawing
+Generated Image ID: user_seed_4f841029
+Source Image Name: i - 71
+Similar Images: 3 found
+Similar Images with Objects: 3 found
+Similar Images with People/Characters: 3 found
+Similar Images with Settings: 3 found
+Similar Images with Compositions: 3 found
+Generated Caption: A couple sits closely on a park bench, surrounded by lush trees in the background. The drawing style captures a serene, intimate moment with soft pencil strokes.
+Timestamp: 2025-08-11T13:00:31.160136
+Workflow ID: 41157b98-9de3-4239-9f5c-f2e277b1c223

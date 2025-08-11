@@ -20,6 +20,7 @@ from ..generation.gpt4o_prompt_generator import generate_sdxl_prompt_from_seed
 class UserWorkflowState(TypedDict):
     """State for the user-seeded image generation workflow."""
     user_seed: str
+    art_category: Optional[ArtCategory] 
     seed_embedding: Optional[List[float]]
     similar_images: Optional[List[Dict]]
     image_id: Optional[str]
@@ -34,6 +35,78 @@ class UserWorkflowState(TypedDict):
     error: Optional[str]
 
 
+def classify_art_category_node(state: UserWorkflowState) -> UserWorkflowState:
+    """Classify the user seed into an art category using substring matching.
+    
+    Args:
+        state: Current workflow state
+        
+    Returns:
+        Updated state with classified art category
+    """
+    print("🎨 Classifying art category for user seed...")
+    
+    try:
+        # Get user seed from state
+        user_seed = state.get('user_seed', '')
+        if not user_seed:
+            raise ValueError("No user seed provided")
+        
+        # Convert to lowercase for case-insensitive matching
+        user_seed_lower = user_seed.lower()
+        
+        # Define category keywords and their associated art categories
+        category_keywords = {
+            ArtCategory.DRAWING: [
+                "drawing", "sketch", "pencil", "illustration", "doodle"
+            ],
+            ArtCategory.ENGRAVING: [
+                "engraving", "engraved", "etching", "carved"
+            ],
+            ArtCategory.ICONOGRAPHY: [
+                "icon", "iconography"
+            ],
+            ArtCategory.PAINTING: [
+                "painting", "painted", "oil painting", "watercolor", "acrylic"
+            ],
+            ArtCategory.SCULPTURE: [
+                "sculpture", "sculpted", "statue"
+            ]
+        }
+        
+        classified_category = ArtCategory.PAINTING  # Default category
+        max_matches = 0
+        
+        for category, keywords in category_keywords.items():
+            matches = sum(1 for keyword in keywords if keyword in user_seed_lower)
+            if matches > max_matches:
+                max_matches = matches
+                classified_category = category
+        
+        # If no specific matches found, use additional heuristics
+        if max_matches == 0:
+            # Check for general art terms that might indicate painting
+            general_painting_terms = ["art", "artwork", "beautiful", "colorful", "vibrant", "detailed"]
+            if any(term in user_seed_lower for term in general_painting_terms):
+                classified_category = ArtCategory.PAINTING
+            else:
+                # Default to painting for ambiguous cases
+                classified_category = ArtCategory.PAINTING
+        
+        state['art_category'] = classified_category
+        state['status'] = "category_classified"
+        print(f"✅ Classified as '{classified_category.value}' (matches: {max_matches}): {user_seed}")
+        
+    except Exception as e:
+        state['error'] = f"Failed to classify art category: {str(e)}"
+        state['status'] = "error"
+        print(f"❌ Error classifying art category: {e}")
+        # Default to painting if classification fails
+        state['art_category'] = ArtCategory.PAINTING
+    
+    return state
+
+
 def create_user_workflow() -> StateGraph:
     """Create the LangGraph workflow for user-seeded image generation.
     
@@ -43,14 +116,16 @@ def create_user_workflow() -> StateGraph:
     # Create the workflow graph
     workflow = StateGraph(UserWorkflowState)
     
-    # Add nodes (skip seed generation, start with embedding)
+    # Add nodes (new entry point: category classification)
+    workflow.add_node("classify_art_category", classify_art_category_node)
     workflow.add_node("embed_user_seed", embed_user_seed_node)
     workflow.add_node("find_similar_images", find_similar_images_node)
     workflow.add_node("generate_image_and_caption", generate_image_and_caption_node)
     workflow.add_node("save_results", save_results_node)
     
     # Define the workflow edges
-    workflow.set_entry_point("embed_user_seed")
+    workflow.set_entry_point("classify_art_category")
+    workflow.add_edge("classify_art_category", "embed_user_seed")
     workflow.add_edge("embed_user_seed", "find_similar_images")
     workflow.add_edge("find_similar_images", "generate_image_and_caption")
     workflow.add_edge("generate_image_and_caption", "save_results")
@@ -128,10 +203,15 @@ def find_similar_images_node(state: UserWorkflowState) -> UserWorkflowState:
         if not seed_embedding:
             raise ValueError("No seed embedding available")
         
-        # Query for similar images (top 5)
+        # Get art category from state
+        art_category = state.get('art_category')
+        print(f"🎨 Using art category filter: {art_category.value if art_category else 'None'}")
+        
+        # Query for similar images with category filter (top 5)
         similar_images = vector_ingestor.query_similar_images(
             embedding=seed_embedding,
-            top_k=5
+            top_k=3,
+            category=art_category.value if art_category else ArtCategory.PAINTING.value
         )
         
         if similar_images:
@@ -243,6 +323,7 @@ def generate_image_and_caption_node(state: UserWorkflowState) -> UserWorkflowSta
         similar_images = state.get('similar_images', [])
         similar_image_objects = state.get('similar_image_objects', [])
         user_seed = state.get('user_seed', '')
+        art_category = state.get('art_category', ArtCategory.PAINTING)  # Get classified category
         image_id = state.get('image_id', 'unknown')
         image_name = state.get('image_name', 'unknown')
         
@@ -263,23 +344,17 @@ def generate_image_and_caption_node(state: UserWorkflowState) -> UserWorkflowSta
                 seed=42  # Default seed
             )
             
-            # Generate caption without context
+            # Generate caption without context using classified category
             caption_generator = GPT4OCaptionGenerator()
             generated_caption = caption_generator.generate_caption(
                 user_seed, 
-                "artwork", 
+                art_category.value,  # Use enum value for caption generation
                 []
             )
         else:
-            # Extract categories from similar images for dominant category
-            categories = []
-            for img in similar_images:
-                metadata = img.metadata
-                category = metadata.get('category', 'artwork')
-                categories.append(category)
-            
-            # Determine dominant category
-            dominant_category = max(set(categories), key=categories.count) if categories else "artwork"
+            # Use the classified art category from substring matching
+            dominant_category = art_category.value  # Get string value from enum
+            print(f"🎨 Using classified art category: {dominant_category}")
             
             # Generate optimized SDXL prompt using GPT-4o
             print("🤖 Generating optimized SDXL prompt with GPT-4o...")
@@ -322,18 +397,18 @@ def generate_image_and_caption_node(state: UserWorkflowState) -> UserWorkflowSta
             context_prompt = user_seed + f" in {dominant_category} style"
             
             # Add setting/location context for caption
-            if settings_list:
-                setting_context = ', '.join(settings_list)
-                context_prompt += f" in settings: {setting_context}"
+            # if settings_list:
+            #     setting_context = ', '.join(settings_list)
+            #     context_prompt += f" in settings: {setting_context}"
             
-            # Add composition/colors context for caption
-            if compositions_list:
-                composition_context = ', '.join(compositions_list)
-                context_prompt += f" with composition and colors: {composition_context}"
+            # # Add composition/colors context for caption
+            # if compositions_list:
+            #     composition_context = ', '.join(compositions_list)
+            #     context_prompt += f" with composition and colors: {composition_context}"
             
-            # Add general descriptions as inspiration for caption
-            if descriptions_list:
-                context_prompt += f" inspired by: {', '.join(descriptions_list)}"
+            # # Add general descriptions as inspiration for caption
+            # if descriptions_list:
+            #     context_prompt += f" inspired by: {', '.join(descriptions_list)}"
             
             print(f"🎨 Image generation prompt: {image_prompt}")
             print(f"📝 Caption generation prompt: {context_prompt}")
@@ -440,7 +515,7 @@ async def generate_caption_async(
                 all_context.append(img_obj['composition_colors'])
         
         # Generate caption using the class with enhanced context
-        caption = caption_generator.generate_caption(prompt, art_category, all_context)
+        caption = caption_generator.generate_caption(prompt, art_category, [])
         
         return caption
         
@@ -512,18 +587,14 @@ def save_results_node(state: UserWorkflowState) -> UserWorkflowState:
         caption_filename = f"user_caption_{workflow_id}_{timestamp}.txt"
         caption_path = caption_dir / caption_filename
         
-        # Extract art category from similar images
-        art_category = "artwork"  # Default
-        similar_images = state.get('similar_images', [])
-        if similar_images:
-            # Get category from first similar image
-            first_image_metadata = similar_images[0].metadata
-            art_category = first_image_metadata.get('category', 'artwork')
+        # Get art category from workflow state (classified by substring matching)
+        art_category = state.get('art_category', ArtCategory.PAINTING)
+        art_category_str = art_category.value if art_category else 'artwork'
         
         with open(caption_path, 'w') as f:
             f.write(f"Generated Image: {state.get('output_path', 'N/A')}\n")
             f.write(f"User Seed: {user_seed}\n")
-            f.write(f"Art Category: {art_category}\n")
+            f.write(f"Art Category: {art_category_str}\n")
             f.write(f"Generated Image ID: {image_id}\n")
             f.write(f"Source Image Name: {image_name}\n")
             f.write(f"Similar Images: {len(similar_image_objects)} found\n")
@@ -557,6 +628,7 @@ def create_user_initial_state(user_seed: str) -> UserWorkflowState:
     """
     return {
         'user_seed': user_seed,
+        'art_category': None,  # Will be set by classify_art_category_node
         'seed_embedding': None,
         'similar_images': None,
         'image_id': None,

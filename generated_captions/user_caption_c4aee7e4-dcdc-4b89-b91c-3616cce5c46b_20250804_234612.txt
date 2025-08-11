@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_c4aee7e4-dcdc-4b89-b91c-3616cce5c46b_20250804_234612.png
+User Seed: An painting of cruxification
+Art Category: iconography
+Generated Image ID: user_seed_8fd3c939
+Source Image Name: 82
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In a dynamic neoclassical style, this painting juxtaposes a three-faced Jesus amidst diverse settings, blending sacred and secular. Soldiers, a courtroom, and a bustling street evoke a contemplative yet vibrant atmosphere.
+Timestamp: 2025-08-04T23:45:46.438570
+Workflow ID: c4aee7e4-dcdc-4b89-b91c-3616cce5c46b

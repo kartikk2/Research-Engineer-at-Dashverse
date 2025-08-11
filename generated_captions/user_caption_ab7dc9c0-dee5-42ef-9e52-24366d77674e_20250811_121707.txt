@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_ab7dc9c0-dee5-42ef-9e52-24366d77674e_20250811_121707.png
+User Seed: A serene Japanese garden with cherry blossoms falling on a stone lantern
+Art Category: painting
+Generated Image ID: user_seed_b28af911
+Source Image Name: 1862
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: A tranquil scene captures cherry blossoms softly cascading onto a stone lantern, set against a moonlit backdrop. The painting's delicate brushwork evokes a serene, contemplative mood.
+Timestamp: 2025-08-11T12:16:42.510563
+Workflow ID: ab7dc9c0-dee5-42ef-9e52-24366d77674e

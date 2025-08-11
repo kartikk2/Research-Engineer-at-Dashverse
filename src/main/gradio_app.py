@@ -115,17 +115,17 @@ def create_gradio_interface():
         """)
         
         # Example seeds
-        gr.HTML("""
-        <div class="example-seeds">
-            <h4>💡 Example descriptions:</h4>
-            <ul>
-                <li>"A painting of a dragon flying over a medieval castle at sunset with golden clouds"</li>
-                <li>"A serene Japanese garden with cherry blossoms falling on a stone lantern"</li>
-                <li>"A futuristic cityscape with flying cars and neon lights reflecting in rain puddles"</li>
-                <li>"A Renaissance-style portrait of a mysterious woman with flowing red hair and emerald eyes"</li>
-            </ul>
-        </div>
-        """)
+        # gr.HTML("""
+        # <div class="example-seeds">
+        #     <h4>💡 Example descriptions:</h4>
+        #     <ul>
+        #         <li>"A painting of a dragon flying over a medieval castle at sunset with golden clouds"</li>
+        #         <li>"A serene Japanese garden with cherry blossoms falling on a stone lantern"</li>
+        #         <li>"A futuristic cityscape with flying cars and neon lights reflecting in rain puddles"</li>
+        #         <li>"A Renaissance-style portrait of a mysterious woman with flowing red hair and emerald eyes"</li>
+        #     </ul>
+        # </div>
+        # """)
         
         # Input section (above everything)
         seed_input = gr.Textbox(

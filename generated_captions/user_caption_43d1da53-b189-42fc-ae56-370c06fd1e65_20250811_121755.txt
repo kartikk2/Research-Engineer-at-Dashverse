@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_43d1da53-b189-42fc-ae56-370c06fd1e65_20250811_121755.png
+User Seed: A Renaissance-style portrait of a mysterious woman with flowing red hair and emerald eyes
+Art Category: painting
+Generated Image ID: user_seed_49f25a4a
+Source Image Name: 0582
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: A Renaissance-inspired painting of a mysterious woman with flowing red hair and striking emerald eyes, wearing a black dress and hat, set against a soft, muted background.
+Timestamp: 2025-08-11T12:17:28.763560
+Workflow ID: 43d1da53-b189-42fc-ae56-370c06fd1e65

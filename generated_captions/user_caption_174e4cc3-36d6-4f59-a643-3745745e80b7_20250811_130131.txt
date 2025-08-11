@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_174e4cc3-36d6-4f59-a643-3745745e80b7_20250811_130131.png
+User Seed: A colourful drawing of a couple sitting on a bench
+Art Category: drawing
+Generated Image ID: user_seed_0f8be92a
+Source Image Name: i - 49
+Similar Images: 3 found
+Similar Images with Objects: 3 found
+Similar Images with People/Characters: 3 found
+Similar Images with Settings: 3 found
+Similar Images with Compositions: 3 found
+Generated Caption: A vibrant drawing depicts a couple seated on a bench, surrounded by lush greenery. The sketch style captures a serene, intimate atmosphere with expressive, colorful strokes.
+Timestamp: 2025-08-11T13:01:05.453627
+Workflow ID: 174e4cc3-36d6-4f59-a643-3745745e80b7

@@ -130,22 +130,30 @@ class VectorDBIngestor:
             print(f"❌ Batch ingestion failed: {e}")
             return {'success': 0, 'failed': len(image_metadata_list)}
     
-    def query_similar_images(self, embedding: List[float], top_k: int = 5) -> List[Dict]:
-        """Query for similar images.
+    def query_similar_images(self, embedding: List[float], top_k: int = 3, category: str = None) -> List[Dict]:
+        """Query for similar images with optional category filter.
         
         Args:
             embedding: Query embedding vector
             top_k: Number of similar results to return
+            category: Optional category filter (e.g., "painting", "drawing", etc.)
             
         Returns:
             List of similar image results
         """
         try:
-            results = self.index.query(
-                vector=embedding,
-                top_k=top_k,
-                include_metadata=True
-            )
+            query_params = {
+                "vector": embedding,
+                "top_k": top_k,
+                "include_metadata": True
+            }
+            
+            # Add category filter if provided
+            if category:
+                query_params["filter"] = {"category": {"$eq": category}}
+                print(f"🔍 Applying category filter: {category}")
+            
+            results = self.index.query(**query_params)
             return results.matches
         except Exception as e:
             print(f"❌ Query failed: {e}")

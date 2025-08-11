@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_8e534bae-837c-4044-9423-6f077dcd6287_20250811_122226.png
+User Seed: Graceful figure captured in motion, elegantly crafted sculpture
+Art Category: sculpture
+Generated Image ID: user_seed_eba5c42a
+Source Image Name: i - 156
+Similar Images: 3 found
+Similar Images with Objects: 3 found
+Similar Images with People/Characters: 3 found
+Similar Images with Settings: 3 found
+Similar Images with Compositions: 3 found
+Generated Caption: A bronze sculpture of a man leaping captures dynamic motion, set against a serene sand pit backdrop, exuding elegance and grace in its sculptural form.
+Timestamp: 2025-08-11T12:22:01.057161
+Workflow ID: 8e534bae-837c-4044-9423-6f077dcd6287

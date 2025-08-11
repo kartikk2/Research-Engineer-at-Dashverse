@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_10333813-086b-4e17-baf0-81be529b7b81_20250811_121516.png
+User Seed: A drawing of a dragon flying over a castle at sunset
+Art Category: drawing
+Generated Image ID: user_seed_e6673959
+Source Image Name: i - 542
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: A majestic dragon soars above a castle at dusk, rendered in intricate drawing style. The warm sunset hues create a mystical and enchanting atmosphere.
+Timestamp: 2025-08-11T12:14:50.693558
+Workflow ID: 10333813-086b-4e17-baf0-81be529b7b81

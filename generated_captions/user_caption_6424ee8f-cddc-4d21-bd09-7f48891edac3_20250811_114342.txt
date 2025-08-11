@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_6424ee8f-cddc-4d21-bd09-7f48891edac3_20250811_114342.png
+User Seed: A painting of a dragon flying over a castle at sunset
+Art Category: engraving
+Generated Image ID: user_seed_9965b761
+Source Image Name: i - 425
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: A majestic dragon soars above a detailed castle, set against a cityscape at sunset. The engraving style captures the scene's dramatic and mystical atmosphere.
+Timestamp: 2025-08-11T11:43:16.925574
+Workflow ID: 6424ee8f-cddc-4d21-bd09-7f48891edac3

@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_d54c5dd3-9e66-44ce-b0ca-17ca6dbe7a58_20250804_235129.png
+User Seed: A drawing of a *couple* sitting on a bench
+Art Category: drawing
+Generated Image ID: user_seed_7fd1d899
+Source Image Name: i - 71
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this evocative drawing, a couple sits serenely on a bench, surrounded by the intimate ambiance of a cityscape. The delicate pencil strokes capture their quiet connection, set against a backdrop that subtly blends urban life with personal intimacy. The composition, rich in detail yet minimalist in tone, evokes a sense of timeless tranquility, inviting viewers to ponder the stories within this tender moment.
+Timestamp: 2025-08-04T23:51:02.911194
+Workflow ID: d54c5dd3-9e66-44ce-b0ca-17ca6dbe7a58

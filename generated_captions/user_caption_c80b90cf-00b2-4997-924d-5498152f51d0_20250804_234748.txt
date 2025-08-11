@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_c80b90cf-00b2-4997-924d-5498152f51d0_20250804_234748.png
+User Seed: A drawing of a couple sitting on a bench
+Art Category: drawing
+Generated Image ID: user_seed_4f841029
+Source Image Name: i - 71
+Similar Images: 5 found
+Similar Images with Objects: 5 found
+Similar Images with People/Characters: 5 found
+Similar Images with Settings: 5 found
+Similar Images with Compositions: 5 found
+Generated Caption: In this evocative drawing, a couple sits serenely on a bench, enveloped by a tranquil garden setting. Delicate pencil strokes capture their intimate connection, while the soft, muted background enhances the contemplative mood, inviting viewers to reflect on the quiet beauty of shared moments.
+Timestamp: 2025-08-04T23:47:21.083164
+Workflow ID: c80b90cf-00b2-4997-924d-5498152f51d0

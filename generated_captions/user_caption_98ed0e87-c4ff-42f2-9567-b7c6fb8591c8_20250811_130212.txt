@@ -1,0 +1,13 @@
+Generated Image: generated_images/user_generated_98ed0e87-c4ff-42f2-9567-b7c6fb8591c8_20250811_130212.png
+User Seed: a painting of rennaisance
+Art Category: painting
+Generated Image ID: user_seed_dbbfcc6f
+Source Image Name: 0030
+Similar Images: 3 found
+Similar Images with Objects: 3 found
+Similar Images with People/Characters: 3 found
+Similar Images with Settings: 3 found
+Similar Images with Compositions: 3 found
+Generated Caption: A serene Renaissance painting features elegantly dressed figures in a lush garden, with a soft, warm color palette and intricate brushwork, evoking a tranquil, timeless atmosphere.
+Timestamp: 2025-08-11T13:01:46.571909
+Workflow ID: 98ed0e87-c4ff-42f2-9567-b7c6fb8591c8
